@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FourniTrack</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
+    <link href="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="nav">
+        <div class="menu">
+            <ul class="navMenu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#pourquoi">Pourquoi</a></li>
+                <li><a href="#testimonial">Temoignages</a></li>
+                <li><a href="#cart">Carte</a></li>
+            </ul>
+        </div>
+    </div>
+    <section id="home">
+        <div class="wrapper">
+            <div class="container header">
+                <h1>FURNITRACK</h1>
+                <p>Ne gaspions plus</p>
+                <a class="button" href="#about">Qui somme nous</a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>
+                Mon projet, c’est une application de gestion de dépôt de meubles posés
+                a coté des poubelles de la commune. Le but, c’est d’arrêter le
+                gaspillage et de donner une 2e vie à ces meubles et aussi donner la
+                chance aux autres de profiter autrement de ces meubles.<br />
+
+                « furnitracker » est une application qui fonctionne en remplissant les
+                informations et l’adresse postale pour réserver ou déposer une annonce
+                d’un meuble, après il y a une carte qui s’affiche avec les
+                géolocalisations de ces meubles. Dès que quelqu’un dépose un meuble,
+                on reçoit une notification et on peux réserver pour aller le
+                chercher.<br />
+                Ça dépends de notre efficacité pour réserver, parce qu’il se peut que
+                d’autres l’auront déjà pris (premier venu, premier servi).
+            </p>
+        </div>
+    </section>
+    <section id="pourquoi">
+        <div class="container">
+            <h2>Pourquoi</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Problèmes</h3>
+                    <div class="card-content">
+                        <span>-Des meubles gaspillés, et posés a coté des poubelles</span>
+                        <br />
+                        <br />
+                        <span>- Des meubles qui peuvent s’abîmer facilement avec la pluie ou
+                            le soleil</span>
+                        <br />
+                        <br />
+                        <span>- Personne n’est au courant qu’il y a un meuble en bon état
+                            posé, si on le voit pas.
+                        </span>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Solutions</h3>
+                    <div class="card-content">
+                        <span>- Un monde renouvelable a du sens pour vous ?</span>
+                        <br />
+                        <br />
+                        <span>- Vous voulez donner une nouvelle vie à votre meuble ?</span>
+                        <br />
+                        <br />
+                        <span>- Vous n'aimez pas le gaspillage ? FurniTrack est la solution.
+                        </span>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Fonctionnalités</h3>
+                    <div class="card-content">
+                        <span>- Géolocalisation des meubles </span>
+                        <br />
+                        <br />
+                        <span>- Filtre, meuble par catégories</span>
+                        <br />
+                        <br />
+                        <span>- Taille des meubles - prévoir ou pas un transporteur
+                        </span>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial" class="slider">
+        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+        <input type="radio" name="slider" title="slide2" class="slider__nav" />
+        <input type="radio" name="slider" title="slide3" class="slider__nav" />
+        <input type="radio" name="slider" title="slide4" class="slider__nav" />
+        <div class="slider__inner">
+            <div class="slider__contents">
+                <h2 class="slider__caption">
+                    Ce que nos utilisateurs disent de nous
+                </h2>
+                <p class="slider__txt">
+                    Mira 25 ans
+                    <br />
+                    “Personnellement, je suis contente mon meuble télé aura une 2 eme
+                    vie je n’avais pas envie de le jeter et ça me fait plaisir qu’une
+                    autre personne en profite « Arrêtant le gaspillage ». ”
+                </p>
+            </div>
+            <div class="slider__contents">
+                <h2 class="slider__caption">newspaper-o</h2>
+                <p class="slider__txt">
+                    Noah 18 ans
+                    <br />
+                    “J'ai récupéré un beau canapé alors que je venais d'emménager. ”
+                </p>
+            </div>
+            <div class="slider__contents">
+                <h2 class="slider__caption">television</h2>
+                <p class="slider__txt">
+                    Celine 50 ans
+                    <br />
+                    “Je profite de cette application et je récupère les vieux meubles
+                    pour les rendre encore plus beaux pour finalement les donner à ceux
+                    qui ont en plus besoin”
+                </p>
+            </div>
+            <div class="slider__contents">
+                <h2 class="slider__caption">diamond</h2>
+                <p class="slider__txt">
+                    Jean batiste 65 ans
+                    <br />
+                    “j'ai utilisé cette application, pour déposer une table basse, et
+                    quelqu'un l'a réservé rapidement. ”
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="cart">
+        <div class="container">
+            <h2>Carte</h2>
+            <div id="map"></div>
+        </div>
+    </section>
+    <script>
+        L.mapbox.accessToken =
+            "pk.eyJ1Ijoic2FyYWRlcmYiLCJhIjoiY2tmM3JuandzMDYxaTJ4czd3eGtrdmhwbSJ9.N25xNJO0PXdy0w8E4Qhffg";
+        var map = L.mapbox
+            .map("map")
+            .setView([49.444, 1.095], 16.3)
+            .addLayer(
+                L.mapbox.styleLayer(
+                    "mapbox://styles/saraderf/ckfp8a1wf0u2219mkvcp9u3uc"
+                )
+            );
+
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $(".nav").addClass("scrolling");
+            } else {
+                $(".nav").removeClass("scrolling");
+            }
+        });
+    </script>
+</body>
+
+</html>
